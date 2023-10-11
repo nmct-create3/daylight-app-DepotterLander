@@ -103,7 +103,7 @@ const getData = (endpoint) => {
 // 2 Aan de hand van een longitude en latitude gaan we de yahoo wheater API ophalen.
 let getAPI = async (lat, lon) => {
   // Eerst bouwen we onze url op
-  const link = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=78aa88a9cf9e476813ea09f141cd66a0&units=metric&lang=nl&cnt=1`;
+  const link = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=c5c89f4ae0d1f42efee2053d4e602ff5&units=metric&lang=nl&cnt=1`;
   // Met de fetch API proberen we de data op te halen.
   const { city } = await getData(link);
   // Als dat gelukt is, gaan we naar onze showResult functie.
